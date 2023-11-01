@@ -1,10 +1,63 @@
-#left_label{
+#first_label{
+  float : left;
+  margin-left: 10%;
+  font-size: large;
+}
+
+#second_label{
     float : left;
     margin-left: 20%;
     font-size: large;
 }
-#right_label{
+
+#third_label{
+  float : right;
+  margin-right: 10%;
+  font-size: large;
+}
+
+#fourth_label{
     float : right;
     margin-right: 20%;
     font-size: large;
+}
+
+.text_label #first_label{
+  float : left;
+  margin-left: 25%;
+  font-size: large;
+}
+
+.text_label #second_label{
+    float : right;
+    margin-right: 25%;
+    font-size: large;
+}
+
+
+nav { background: #2ba0db; }
+
+nav ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 15px 14px;
+}
+
+nav ul li p {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 15px 14px;
 }

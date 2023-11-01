@@ -20,14 +20,31 @@
 
 ## 4. 소개 및 시연 영상
 
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)
+[![졸업과제 시연 영상 - 8조](./docs/youtube_title.png)](https://www.youtube.com/watch?v=tGyWVk4Tg2s&list=PLFUP9jG-TDp96chsm66TfMPlAJXIt6Gr9&index=8)
 
 ## 5. 사용법
 
-1. python 가상환경 설치
+1. python 가상환경 설치 및 실행
 
 ```
-
+python3 -m venv test
+cd test
+. bin/activate
 ```
-2. 동영상 다운로드
-https://photos.app.goo.gl/Lb5NjM2ecGv6BcF27
+
+2. 코드 클론하기
+```
+git clone git@github.com:pnucse-capstone/capstone-2023-1-8.git
+cd capstone-2023-1-8
+```
+
+3. 필요 라이브러리 설치
+```
+pip install -r requirements.txt
+```
+
+4. 실행하기
+```
+python3 app.py
+```
+![실행 예시 이미지](./docs/example.png)
