@@ -11,7 +11,6 @@ model1 = mirnet(size=(256, 256))
 model2 = cycle(size=(256, 256))
 
 def get_mainframe():
-    print("main_frame 실행중")
     capture = cv2.VideoCapture('video/videoplay.mp4') # 노트북의 경우 0, 외부 장치 번호가 1~n 까지 순차적으로 할당
 
     # 카메라의 속성 설정 메서드 set
@@ -23,8 +22,6 @@ def get_mainframe():
 
     # while을 통해서 카메라에서 프레임을 지속적으로 받는다.
     while cv2.waitKey(33) < 0:
-        print("main_frame 실행중")
-
         # ret = 카메라 상태, 비정상이면 False
         # frame = 현재 시점의 프레임
         ret, frame = None, None
@@ -49,8 +46,6 @@ def get_mainframe():
     # 카메라 장치에서 받아온 메모리 해제
     capture.release()
 def get_frame():
-    print("get_frame 실행중")
-
     capture = cv2.VideoCapture('video/videoplay.mp4') # 노트북의 경우 0, 외부 장치 번호가 1~n 까지 순차적으로 할당
 
     # 카메라의 속성 설정 메서드 set
