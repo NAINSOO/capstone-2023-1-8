@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign-language</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><p>월요일조아조아조 데모</p></li>
+                <li><a href="main">밝기 개선</a></li>
+                <li><a href="index">빛번짐 개선</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="text_label">
+        <p id="first_label">original image </p>
+        <p id="second_label">mirnet </p>
+    </div>
+    <div class="container">
+        <div class ="row">
+          <div class = "col-lg-8 offst-lg-2">
+            <img src ="{{url_for('main_feed')}}" width="100%">
+          </div>
+        </div>
+        
+    </div>
+</body>
+</html>
